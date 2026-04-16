@@ -1,8 +1,8 @@
 # Banco Performance Testing
 
-# Automation K6 Performance Testing
+# Automation Performance Testing K6
 
-This is the repository for automation of API, developed to work with Supertest, Mocha and Chai.
+This is the repository for automation of performance tests, developed to work with K6.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This is the repository for automation of API, developed to work with Supertest, 
 
 ## Goal
 
-The goal of this repository is to be easy to understand focused on developing automated tests for API, using [Supertest](https://www.npmjs.com/package/supertest), a tool developed in JavaScript language that provides speed, ease and reliability in the tests.
+The goal of this repository is to be easy to understand focused on developing automated performance tests for API, using [K6](https://k6.io), an open-source load testing tool that makes performance testing easy and productive for engineering teams.
 
 ## Project Structure
 
