@@ -1,0 +1,35 @@
+# K6 Performance Testing
+node_modules/
+dist/
+build/
+
+# Dependencies
+package-lock.json
+yarn.lock
+
+# K6 specific
+results/
+logs/
+*.json
+*.csv
+*.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
