@@ -1,5 +1,5 @@
 import http from 'k6/http'
-import { sleep } from 'k6'
+import { sleep, check } from 'k6'
 
 export const options = {
     iterations: 10
@@ -19,7 +19,12 @@ export default function () {
         },
     }
 
-    http.post(url, payload, params)
+    const response = http.post(url, payload, params)
+
+    check(response, {
+        'Validar que status code é igual a 200': (r) => r.status===200,
+        'Validar que o token é uma string': (r) => typeof(r.json().token) == 'string'
+    })
 
     sleep(1)
 }
