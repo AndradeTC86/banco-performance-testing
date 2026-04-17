@@ -19,11 +19,7 @@ The goal of this repository is to be easy to understand focused on developing au
 ## Project Structure
 
 ```
-|--- fixtures
-|--- helpers
-|--- test 
-|--- package-lock.json
-|--- package.json
+|--- tests 
 ```
 
 ## Tests
@@ -34,13 +30,13 @@ The tests were written using the JavaScript language with Supertest, Mocha and C
 
 ### Initial Setup
 
-1. Requires node. To install, execute `npm install node` or download [Node](https://nodejs.org/en/download/)
-2. Run the command `npm install` to install dependencies
-3. Requires the [Banco API](https://github.com/juliodelimas/banco-api) up and running in the localhost to execute the tests 
+1. Requires K6. To install, download [K6](https://k6.io)
+2. Requires the [Banco API](https://github.com/juliodelimas/banco-api) up and running in the localhost to execute the tests 
 
 ### Run Tests
 
 - Run one of the commands below to run the tests.
   Examples:
-- To run the tests, execute `npm run test`
+- To run the tests, execute `k6.exe run ./tests/login.test.js`
+- To run the tests generating reports, execute `K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run ./tests/login.test.js`
 <p>
