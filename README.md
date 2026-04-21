@@ -19,7 +19,11 @@ The goal of this repository is to be easy to understand focused on developing au
 ## Project Structure
 
 ```
+|--- config
+|--- fixtures
+|--- helpers
 |--- tests 
+|--- utils
 ```
 
 ## Tests
@@ -37,6 +41,6 @@ The tests were written using the JavaScript language with Supertest, Mocha and C
 
 - Run one of the commands below to run the tests.
   Examples:
-- To run the tests, execute `k6.exe run ./tests/login.test.js`
-- To run the tests generating reports, execute `K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run ./tests/login.test.js`
+- To run the tests, execute `k6.exe run ./tests/login.test.js` or `k6.exe run ./tests/transferencias.test.js`
+- To run the tests generating reports, execute `K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run ./tests/login.test.js` or `K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=html-report.html k6 run ./tests/transferencias.test.js`
 <p>
